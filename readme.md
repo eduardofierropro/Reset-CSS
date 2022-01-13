@@ -1,6 +1,6 @@
 # Responsive Design con Media Queries y Breakpoints
 
-Código de ejemplo para el vídeo en Youtube sobre Responsive Design: [XXXXXXXXX](XXXXXXXXX).
+Código de ejemplo para el vídeo en Youtube sobre Responsive Design: [https://youtu.be/Foieq2jTajE](https://youtu.be/Foieq2jTajE).
 Si te ha gustado o te ha servido coméntalo en un directo o sígueme por Twitch y Youtube 😊
 
 ## Vídeos relacionados en Youtube 🛠️
