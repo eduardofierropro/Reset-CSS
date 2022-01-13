@@ -1,4 +1,4 @@
-# Responsive Design con Media Queries y Breakpoints
+# Reset CSS PRO con explicación en Youtube línea a línea
 
 Código de ejemplo para el vídeo en Youtube sobre Responsive Design: [https://youtu.be/Foieq2jTajE](https://youtu.be/Foieq2jTajE).
 Si te ha gustado o te ha servido coméntalo en un directo o sígueme por Twitch y Youtube 😊
@@ -20,6 +20,7 @@ Si te ha gustado o te ha servido coméntalo en un directo o sígueme por Twitch 
 * [Github](https://github.com/eduardofierropro)
 * [Instagram](https://instagram.com/eduardofierro.pro)
 * [Twitter](https://twitter.com/edfierropro)
+* [Discord](https://discord.gg/t4Txush)
 
 ## Master/Cursos donde sor profesor 📚
 
