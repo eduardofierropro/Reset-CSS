@@ -4,8 +4,9 @@ Código de ejemplo para el vídeo en Youtube sobre Responsive Design: [https://y
 Si te ha gustado o te ha servido coméntalo en un directo o sígueme por Twitch y Youtube 😊
 
 ## Vídeos relacionados en Youtube 🛠️
-
+https://www.youtube.com/watch?v=bXqPNoYFK8w
 * [Reset CSS](https://youtu.be/bXqPNoYFK8w)
+* [Reset PRO en Código](https://www.youtube.com/watch?v=bXqPNoYFK8w)
 * [Nomenclaturas CSS](https://youtu.be/lhEJkeCJ3As)
 * [Metodologías CSS](https://youtu.be/f0LpZoyY1gE)
 * [Arquitecturas CSS](https://youtu.be/tUldrlfIGb4)

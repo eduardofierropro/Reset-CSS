@@ -36,7 +36,42 @@
   }
 }
 /* Reseteamos los margin y paddings de todas las etiquetas */
-* {
+/* Cuidado con el uso del *. Normalmente se se debe de usar en selectores al maquetar. Pero usar alguno para resetear y evitarnos problemas no es mala opción. Tú eliges. */
+
+/* 
+
+Puedes elegir usar: *{}
+
+Puedes elegir usar esto: 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video , button, button{}
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video , button, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -133,7 +168,11 @@ svg {
   display: block;
   fill: currentColor;
 }
-
+/* (Probándolo, no usar en producción) En el caso de añadir una  */
+/* p svg{
+  display: inline;
+  width: initial;
+} */
 /* Configuramos la tipografía para toda la web */
 body {
   min-height: 100vh;
