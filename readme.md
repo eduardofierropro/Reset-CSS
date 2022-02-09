@@ -32,9 +32,3 @@ Soy profesor en la Escuela Trazos donde impartimos Cursos y Másters sobre desar
 
 MIT Public License v3.0
 No puede usarse comencialmente
-
-
- 
- 
- 
- 
