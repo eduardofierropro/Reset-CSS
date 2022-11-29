@@ -1,4 +1,4 @@
-![Imagen del proyecto](https://github.com/eduardofierropro/Reset-CSS/blob/main/public/assets/home1.png)
+![Imagen del proyecto](https://github.com/eduardofierropro/Reset-CSS/blob/main/assets/home1.jpg)
 
 # Reset CSS PRO
 
