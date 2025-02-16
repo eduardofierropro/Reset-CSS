@@ -4,29 +4,28 @@
   --negro         : #393939;
   
   /* Tipografía */
-  --tipo-principal   : Helvetica, Arial, sans-serif;
-  --tipo-secundaria  : Verdana;
+  --font-f-main   : Helvetica, Arial, sans-serif;
 }
   
 /* (Opcional) Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
-  :root{
-      --negro         : #ececec;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   :root{
+//       --negro         : #ececec;
+//   }
+// }
 
 /* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-@media (prefers-contrast: high){
-    :root{}
-}
+// @media (prefers-contrast: high){
+//     :root{}
+// }
 
 /* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
+// @media (prefers-reduced-motion: reduce) {
+//   * {
+//     animation: none !important;
+//     transition: none !important;
+//   }
+// }
 
 /* Reseteamos los margin y paddings de todas las etiquetas */
 * , *::before , *::after{
@@ -76,6 +75,7 @@ h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em
   font-size: inherit;
   font-weight: inherit;
   font-style: inherit;
+  line-height: inherit;
   text-decoration: none;
   color:inherit;
 }
@@ -95,6 +95,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 form , input, textarea, select , button , label{
     font-family: inherit;
     font-size: inherit;
+    line-height: inherit;
     hyphens: auto;
     background-color: transparent;
     color:inherit;
@@ -119,8 +120,6 @@ svg{
 body {
   min-height  : 100vh;
   font-size   : 100%;
-  font-family : var(--tipo-principal);
-  color       : var(--negro);
   /* (Opcional) */ hyphens: auto;
   /* (Opcional) */ font-smooth: always;
   /* (Opcional) */ -webkit-font-smoothing: antialiased;
