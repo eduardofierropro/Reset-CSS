@@ -1,9 +1,22 @@
 @charset "UTF-8";
+/*
 
+  Con este reset vamos a resolver:
+    👉 Unificar el uso de Custom Properties
+    👉 Problemas de box-model más generales
+    👉 Problemas con imagenes, vídeos e iconos svg
+    👉 Problemas con tipografías y etiquetas input en formularios
+    👉 Unificar la tipografía de todas las etiquetas de una web
+
+*/
+/* Recuerda definir las Custom properties */
 :root {
-  /* Recuerda crear custom-propertes para colores, tipografías*/
+  /* Colores */
+  --color-main-black: #393939;
+  
+  /* Tipografía */
+  --font-f-main: Helvetica, Arial, sans-serif;
 }
-
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation: none !important;
@@ -28,27 +41,25 @@ img, picture, video, iframe, figure {
   width: 100%;
   display: block;
 }
-
 a {
   display: block;
   text-decoration: none;
   color: inherit;
   font-size: inherit;
 }
-
 p a {
   display: inline;
 }
-
-li {
-  list-style-type: none;
+li , menu, summary {
+  list-style: none;
 }
-
+ol{
+  counter-reset: revert;
+}
 html {
   scroll-behavior: smooth;
 }
-
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
   font-size: inherit;
   font-weight: inherit;
   font-style: inherit;
@@ -56,7 +67,12 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
   line-height: inherit;
   color: inherit;
 }
-
+pre, code{
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
@@ -72,8 +88,10 @@ form, input, textarea, select, button, label {
   color: inherit;
   display: block;
 }
-
-table, tr, td {
+::placeholder {
+  color: unset;
+}
+table, tr, td , th, thead, tbody, tfoot{
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -87,6 +105,17 @@ p svg{
   display: inline;
   width: initial;
 }
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
 body {
   min-height: 100vh;
   font-size: 100%;

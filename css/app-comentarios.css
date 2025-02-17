@@ -9,7 +9,7 @@
     👉 Unificar la tipografía de todas las etiquetas de una web
 
 */
-/* Aquí definimos las Custom properties */
+/* (Opcional) Aquí definimos las Custom properties */
 :root {
   /* Colores */
   --color-main-black: #393939;
@@ -18,32 +18,38 @@
   --font-f-main: Helvetica, Arial, sans-serif;
 }
 
-/* Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
+/* (Opcional) Las adaptamos al modo oscuro */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-main-black: #ececec;
   }
-}
-/* Opcional */
-/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-/* Opcional */
-/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+} */
+/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+/* 
+@media (prefers-contrast: high){
+  :root{}
+} 
+*/
+  
+/* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+/* 
 @media (prefers-reduced-motion: reduce) {
   * {
-    -webkit-animation: none !important;
-            animation: none !important;
-    -webkit-transition: none !important;
+    animation: none !important;
     transition: none !important;
   }
-}
+} 
+  */
 /* Reseteamos los margin y paddings de todas las etiquetas */
-* {
+* , *::before , *::after{
   margin: 0;
   padding: 0;
   border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   vertical-align: baseline;
+}
+*::before , *::after{
+  display: block;
 }
 
 /* Evitamos problemas con las imagenes */
@@ -51,32 +57,32 @@ img, picture, video, iframe, figure {
   max-width: 100%;
   width: 100%;
   display: block;
-  /* opcional */
-  -o-object-fit: cover;
-     object-fit: cover;
-  /* opcional */
-  -o-object-position: center center;
-     object-position: center center;
+  /* (Opcional) */ -o-object-fit: cover;
+  /* (Opcional) */ object-fit: cover;
+  /* (Opcional) */ -o-object-position: center center;
+  /* (Opcional) */ object-position: center center;
 }
 
-/* Reseteamos los enlaces para funcionar como cajas... */
+/* Anchors: Reseteamos los enlaces para funcionar como cajas... */
 a {
   display: block;
   text-decoration: none;
   color: inherit;
   font-size: inherit;
 }
-
 /* ... excepto los que se encuentran en párrafos */
 p a {
   display: inline;
 }
 
 /* Quitamos los puntos de los <li> */
-li {
-  list-style-type: none;
+li , menu, summary {
+  list-style: none;
 }
-
+/* Evita que listas anidadas sigan numerando desde el padre en Firefox. */
+ol{
+  counter-reset: revert;
+}
 /* Configuramos anclas suaves */
 html {
   scroll-behavior: smooth;
@@ -91,22 +97,28 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
   text-decoration: none;
   color: inherit;
 }
-
+pre, code{
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
 /* Evitamos problemas con los pseudoelementos de quotes */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
 
-/* Configuramos el texto que seleccionamos */
-::-moz-selection {
+
+/* (Opcional): Configuramos el texto que seleccionamos */
+/* ::-moz-selection {
   background-color: var(--color-main-black);
   color: var(--blanco);
 }
 ::selection {
   background-color: var(--color-main-black);
   color: var(--blanco);
-}
+} */
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
 form, input, textarea, select, button, label {
@@ -114,20 +126,22 @@ form, input, textarea, select, button, label {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
   background-color: transparent;
   color: inherit;
   display: block;
-  /* opcional */
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  /* (Opcional) */ -webkit-hyphens: auto;
+  /* (Opcional) */ -ms-hyphens: auto;
+  /* (Opcional) */ hyphens: auto;
+  /* (Opcional) */ -webkit-appearance: none;
+  /* (Opcional) */ -moz-appearance: none;
+  /* (Opcional) */ appearance: none;
 }
-
+/* Elimina el color predeterminado de los placeholders */
+::placeholder {
+  color: unset;
+}
 /* Reseteamos las tablas */
-table, tr, td {
+table, tr, td , th, thead, tbody, tfoot{
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -142,6 +156,19 @@ p svg{
   display: inline;
   width: initial;
 }
+/* Corrige un bug en Chrome para contenteditable */
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+/* Hace que los elementos arrastrables se comporten correctamente en Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
 /* Configuramos la tipografía para toda la web */
 body {
   min-height: 100vh;
