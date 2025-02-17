@@ -38,7 +38,7 @@ Puedes ir a la web [resetcss.pro](https://resetcss.pro) y copiarlo directamente 
 
 [![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20en%20resetcss.pro&color=ffffff&style=for-the-badge)](https://resetcss.pro/)
 
-## Configuración del reset
+## Configuración del reset para NPM
 La idea de un reset es que se adapte a tu forma de maquetar, y puedes configurarlo para sólo usar ciertas partes del reset que mejor se adapten a tí.
 
 
