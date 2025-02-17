@@ -89,7 +89,7 @@ html {
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em, mark, del {
   font-size: 1em;
   font-weight: inherit;
   font-style: inherit;
@@ -135,6 +135,15 @@ form, input, textarea, select, button, label {
   /* (Opcional) */ -webkit-appearance: none;
   /* (Opcional) */ -moz-appearance: none;
   /* (Opcional) */ appearance: none;
+}
+/* Safari tiene un bug en textarea donde white-space: revert; puede causar colapsos en contenido largo */
+textarea {
+  white-space: pre-wrap;
+}
+/* Añadimos el cursor y evitamos problemas con display:revert en algunos navegadores */
+button {
+  all: unset;
+  cursor: pointer;
 }
 /* Elimina el color predeterminado de los placeholders */
 ::placeholder {

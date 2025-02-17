@@ -9,6 +9,7 @@ Reset CSS Pro un reset personalizable que combina las líneas de los reset más 
 * Problemas con imagenes, vídeos e iconos svg
 * Problemas con tipografías y etiquetas input en formularios
 * Unificar la tipografía de todas las etiquetas de una web
+* Añade la nu
 
 [![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20en%20resetcss.pro&color=000000&style=for-the-badge)](https://resetcss.pro/)
 [![Youtube](https://img.shields.io/static/v1?label=&message=aprender%20teoria&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/bXqPNoYFK8w)
@@ -85,7 +86,7 @@ import 'reset-css-pro/typography';      // Incluye sólo el reset de tipografía
   * *Opcional*  object-position: center center;
 * Reset para las anclas que funcionen como cajas excepto los que se encuentran en párrafos 
   * *Opcional* Configuramos anclas suaves 
-* Quitamos los puntos de los <li> 
+* Quitamos los puntos de los `<li>` 
 * Desactivamos estilos por defecto de las principales etiquetas de texto 
 * Evitamos problemas con los pseudoelementos de *quotes* 
 * Configuramos el selection de una web en base al color principal

@@ -25,15 +25,10 @@
     transition: none !important;
   }
 }
-* , *::before , *::after{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  vertical-align: baseline;
-}
-*::before , *::after{
-  display: block;
+
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
 }
 
 img, picture, video, iframe, figure {
@@ -59,7 +54,7 @@ ol{
 html {
   scroll-behavior: smooth;
 }
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em, mark, del {
   font-size: inherit;
   font-weight: inherit;
   font-style: inherit;
@@ -87,6 +82,13 @@ form, input, textarea, select, button, label {
   background-color: transparent;
   color: inherit;
   display: block;
+}
+textarea {
+  white-space: pre-wrap;
+}
+button {
+  all: unset;
+  cursor: pointer;
 }
 ::placeholder {
   color: unset;
