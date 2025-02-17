@@ -2,7 +2,7 @@
 
 # Reset CSS PRO
 
-Reset CSS Pro es el reset que uso de forma personal y el cual solventa varios problemas con los que me encuentro a la hora de maquetar, problemas como:
+Reset CSS Pro un reset personalizable que puedes usar en tu proyecto, el cual solventa varios problemas con los que me encuentro a la hora de maquetar, problemas como:
 
 * Unificar el uso de Custom Properties
 * Problemas de box-model más generales
@@ -10,8 +10,33 @@ Reset CSS Pro es el reset que uso de forma personal y el cual solventa varios pr
 * Problemas con tipografías y etiquetas input en formularios
 * Unificar la tipografía de todas las etiquetas de una web
 
+[![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20en%20resetcss.pro&color=ffffff&style=for-the-badge)](https://resetcss.pro/)
 [![Youtube](https://img.shields.io/static/v1?label=&message=aprender%20teoria&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/bXqPNoYFK8w)
 [![Youtube](https://img.shields.io/static/v1?label=&message=explicación%20del%20código&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/Foieq2jTajE)
+
+## Instalación en NPM
+
+Primero debes de instalarlo en tu proyecto con:
+
+```bash
+npm i reset-css-pro 
+```
+
+Después dentro del proyecto puedes importarlo desde Javascript o desde CSS, por ejemplo si estás usando Vite en el archivo `App.jsx` puedes añadir:
+
+```js
+import 'reset-css-pro'
+```
+
+Y otra opción desde el archivo `index.css` puedes añadir:
+```css
+@import 'reset-css-pro';
+```
+
+## Instalación en proyecto sencillo de HTML y CSS
+Puedes ir a la web [resetcss.pro](https://resetcss.pro) y copiarlo directamente desde el configurador para probarlo.
+
+[![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20en%20resetcss.pro&color=ffffff&style=for-the-badge)](https://resetcss.pro/)
 
 ## ¿Qué problemas resuelve?
 
@@ -36,9 +61,6 @@ Reset CSS Pro es el reset que uso de forma personal y el cual solventa varios pr
     * *Opcional* Configuración de interlineado
     * *Opcional* Problemas con palabras largas gracias a hyphens
     * *Opcional* Tipografía más suave en macOS gracias a font-smooth
-
-## Instalación por npm *(Próximamente)*
-En un próximo directo desde Twitch lo publicaremos en NPM para poder usarlo en cualquier proyecto.
 
 
 ## 📥 Descarga el PDF con todos los módulos
