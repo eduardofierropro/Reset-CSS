@@ -12,12 +12,15 @@
     transition: none !important;
   }
 }
-* {
+* , *::before , *::after{
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
   vertical-align: baseline;
+}
+*::before , *::after{
+  display: block;
 }
 
 img, picture, video, iframe, figure {
