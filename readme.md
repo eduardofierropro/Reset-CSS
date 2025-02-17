@@ -10,7 +10,7 @@ Reset CSS Pro un reset personalizable que puedes usar en tu proyecto, el cual so
 * Problemas con tipografías y etiquetas input en formularios
 * Unificar la tipografía de todas las etiquetas de una web
 
-[![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20en%20resetcss.pro&color=ffffff&style=for-the-badge)](https://resetcss.pro/)
+[![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20en%20resetcss.pro&color=000000&style=for-the-badge)](https://resetcss.pro/)
 [![Youtube](https://img.shields.io/static/v1?label=&message=aprender%20teoria&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/bXqPNoYFK8w)
 [![Youtube](https://img.shields.io/static/v1?label=&message=explicación%20del%20código&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/Foieq2jTajE)
 
@@ -37,6 +37,42 @@ Y otra opción desde el archivo `index.css` puedes añadir:
 Puedes ir a la web [resetcss.pro](https://resetcss.pro) y copiarlo directamente desde el configurador para probarlo.
 
 [![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20en%20resetcss.pro&color=ffffff&style=for-the-badge)](https://resetcss.pro/)
+
+## Configuración del reset
+La idea de un reset es que se adapte a tu forma de maquetar, y puedes configurarlo para sólo usar ciertas partes del reset que mejor se adapten a tí.
+
+
+### Tanto en CSS...
+```css
+@import 'reset-css-pro';           /* Incluye todo el reset                 */
+@import 'reset-css-pro/anchor';    /* Incluye sólo para los enlaces         */
+@import 'reset-css-pro/body';      /* Incluye sólo el body                  */
+@import 'reset-css-pro/box-model'; /* Incluye sólo el clásico *{margin:0}   */
+@import 'reset-css-pro/forms';     /* Incluye sólo reset de formularios     */
+@import 'reset-css-pro/list';      /* Incluye sólo los puntos de la lista   */
+@import 'reset-css-pro/media';     /* Incluye sólo imágenes, video e iframes*/
+@import 'reset-css-pro/motion';    /* Incluye sólo eliminar animaciones en reduced-motion */
+@import 'reset-css-pro/smooth-anchor';    /* Incluye  sólo anclas suaves    */
+@import 'reset-css-pro/svg';       /* Incluye sólo etiquetas svg            */
+@import 'reset-css-pro/table';     /* Incluye sólo reset para tablas        */
+@import 'reset-css-pro/typography';/* Incluye sólo el reset de tipografías  */
+```
+
+### ... como en Javascript
+```js
+import 'reset-css-pro';                 // Incluye todo el reset                 
+import 'reset-css-pro/anchor';          // Incluye sólo para los enlaces         
+import 'reset-css-pro/body';            // Incluye sólo el body                  
+import 'reset-css-pro/box-model';       // Incluye sólo el clásico *{margin:0}   
+import 'reset-css-pro/forms';           // Incluye sólo reset de formularios     
+import 'reset-css-pro/list';            // Incluye sólo los puntos de la lista   
+import 'reset-css-pro/media';           // Incluye sólo imágenes, video e iframes
+import 'reset-css-pro/motion';          // Incluye sólo eliminar animaciones en reduced-motion 
+import 'reset-css-pro/smooth-anchor';   // Incluye  sólo anclas suaves    
+import 'reset-css-pro/svg';             // Incluye sólo etiquetas svg            
+import 'reset-css-pro/table';           // Incluye sólo reset para tablas        
+import 'reset-css-pro/typography';      // Incluye sólo el reset de tipografías  
+```
 
 ## ¿Qué problemas resuelve?
 
