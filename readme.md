@@ -11,7 +11,7 @@ Reset CSS Pro un reset personalizable que combina las líneas de los reset más 
 * Unificar la tipografía de todas las etiquetas de una web
 * Añade la nu
 
-[![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20en%20resetcss.pro&color=000000&style=for-the-badge)](https://resetcss.pro/)
+[![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20a%20resetcss.pro&color=000000&style=for-the-badge)](https://resetcss.pro/)
 [![Youtube](https://img.shields.io/static/v1?label=&message=aprender%20teoria&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/bXqPNoYFK8w)
 [![Youtube](https://img.shields.io/static/v1?label=&message=explicación%20del%20código&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/Foieq2jTajE)
 
