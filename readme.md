@@ -37,7 +37,7 @@ Y otra opción desde el archivo `index.css` puedes añadir:
 ## Instalación en proyecto sencillo de HTML y CSS
 Puedes ir a la web [resetcss.pro](https://resetcss.pro) y copiarlo directamente desde el configurador para probarlo.
 
-[![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Ir%20en%20resetcss.pro&color=000&style=for-the-badge)](https://resetcss.pro/)
+[![Configurador en resetcss.pro](https://img.shields.io/static/v1?label=&message=Configuralo%20en%20resetcss.pro&color=000&style=for-the-badge)](https://resetcss.pro/)
 
 ## Configuración del reset para NPM
 La idea de un reset es que se adapte a tu forma de maquetar, y puedes configurarlo para sólo usar ciertas partes del reset que mejor se adapten a tí.
