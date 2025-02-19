@@ -93,13 +93,14 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em, mark, del, 
   text-decoration: none;
   text-wrap: pretty;
 }
+mark{
+  background-color: transparent;
+}
 /* Evitamos problemas con los pseudoelementos de quotes */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
-
-
 /* (Opcional): Configuramos el texto que seleccionamos */
 /* ::-moz-selection {
   background-color: var(--tu-propia-variable);

@@ -55,6 +55,9 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em, mark, del, 
   text-decoration: none;
   text-wrap: pretty;
 }
+mark{
+  background-color: transparent;
+}
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
@@ -79,6 +82,7 @@ button {
 table, tr, td , th, thead, tbody, tfoot{
   border-collapse: collapse;
   border-spacing: 0;
+  font:inherit;
 }
 svg {
   width: 100%;
