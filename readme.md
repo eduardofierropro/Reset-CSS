@@ -2,7 +2,7 @@
 
 # Reset CSS PRO
 
-Reset CSS Pro un reset personalizable que combina las líneas de los reset más usados y añade algunos extras para que maquetar en tu proyecto sea sencillo. Es el que uso a nivel personal y solventa problemas como:
+Reset CSS Pro es un reset CSS optimizado que elimina las diferencias entre navegadores, estandarizando estilos y evitando inconsistencias en márgenes, tipografías y elementos HTML configurable que te permite:
 
 * Unificar el uso de Custom Properties
 * Problemas de box-model más generales
