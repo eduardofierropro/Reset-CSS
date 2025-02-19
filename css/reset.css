@@ -1,21 +1,12 @@
 @charset "UTF-8";
-/*
 
-  Con este reset vamos a resolver:
-    👉 Unificar el uso de Custom Properties
-    👉 Problemas de box-model más generales
-    👉 Problemas con imagenes, vídeos e iconos svg
-    👉 Problemas con tipografías y etiquetas input en formularios
-    👉 Unificar la tipografía de todas las etiquetas de una web
-
-*/
-/* Recuerda definir las Custom properties */
 :root {
-  /* Colores */
-  --color-main-black: #393939;
+  font-size : 100% ;                  
+  font-family: system-ui, sans-serif; 
+  scroll-behavior : smooth ;          
   
-  /* Tipografía */
-  --font-f-main: Helvetica, Arial, sans-serif;
+  /* (Opcional) Aquí definimos las custom properties */
+
 }
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -35,8 +26,7 @@
 *::before , *::after{
   display: block;
 }
-
-img, picture, video, iframe, figure {
+img, picture, video, iframe, figure , canvas{
   max-width: 100%;
   width: 100%;
   display: block;
@@ -59,30 +49,18 @@ ol{
 html {
   scroll-behavior: smooth;
 }
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em, mark, del {
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  line-height: inherit;
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em, mark, del, pre, code {
+  font:inherit;
   color: inherit;
-}
-pre, code{
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
+  text-decoration: none;
+  text-wrap: pretty;
 }
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
-
 form, input, textarea, select, button, label {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
+  font:inherit;
   hyphens: auto;
   background-color: transparent;
   color: inherit;
@@ -102,7 +80,6 @@ table, tr, td , th, thead, tbody, tfoot{
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 svg {
   width: 100%;
   display: block;
@@ -122,11 +99,10 @@ p svg{
 :where([draggable="true"]) {
   -webkit-user-drag: element;
 }
-
 body {
   min-height: 100vh;
-  font-size: 100%;
-  line-height: 1.4em;
+  color:inherit;
+  line-height: 1.5em;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;

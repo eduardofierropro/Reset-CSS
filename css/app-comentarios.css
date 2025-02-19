@@ -9,25 +9,28 @@
     👉 Unificar la tipografía de todas las etiquetas de una web
 
 */
-/* (Opcional) Aquí definimos las Custom properties */
+
+/* Reseteamos la tipografía por defecto para todos los navegadores */
 :root {
-  /* Colores */
-  --color-main-black: #393939;
+  font-size : 100% ;                  /* Configuramos el tamaño definido por el usuario     */
+  font-family: system-ui, sans-serif; /* Configuramos la tipografía definida por el usuario */
+  scroll-behavior : smooth ;          /* Configuramos anclas suaves */
   
-  /* Tipografía */
-  --font-f-main: Helvetica, Arial, sans-serif;
+  /* (Opcional) Aquí definimos las custom properties */
+
 }
 
 /* (Opcional) Las adaptamos al modo oscuro */
 /* @media (prefers-color-scheme: dark) {
   :root {
-    --color-main-black: #ececec;
+    --tu-propia-variable: #ececec;
   }
 } */
 /* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
 /* 
 @media (prefers-contrast: high){
-  :root{}
+  :root{
+  --tu-propia-variable: #ececec;}
 } 
 */
   
@@ -53,7 +56,7 @@
 }
 
 /* Evitamos problemas con las imagenes */
-img, picture, video, iframe, figure {
+img, picture, video, iframe, figure , canvas{
   max-width: 100%;
   width: 100%;
   display: block;
@@ -68,7 +71,7 @@ a {
   display: block;
   text-decoration: none;
   color: inherit;
-  font-size: inherit;
+  font: inherit;
 }
 /* ... excepto los que se encuentran en párrafos */
 p a {
@@ -83,25 +86,12 @@ li , menu, summary {
 ol{
   counter-reset: revert;
 }
-/* Configuramos anclas suaves */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em, mark, del {
-  font-size: 1em;
-  font-weight: inherit;
-  font-style: inherit;
-  line-height: inherit;
-  text-decoration: none;
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em, mark, del, pre, code {
+  font:inherit;
   color: inherit;
-}
-pre, code{
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
+  text-decoration: none;
+  text-wrap: pretty;
 }
 /* Evitamos problemas con los pseudoelementos de quotes */
 blockquote:before, blockquote:after, q:before, q:after {
@@ -112,20 +102,17 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 /* (Opcional): Configuramos el texto que seleccionamos */
 /* ::-moz-selection {
-  background-color: var(--color-main-black);
+  background-color: var(--tu-propia-variable);
   color: var(--blanco);
 }
 ::selection {
-  background-color: var(--color-main-black);
+  background-color: var(--tu-propia-variable);
   color: var(--blanco);
 } */
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
 form, input, textarea, select, button, label {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
+  font: inherit;
   background-color: transparent;
   color: inherit;
   display: block;
@@ -181,11 +168,8 @@ p svg{
 /* Configuramos la tipografía para toda la web */
 body {
   min-height: 100vh;
-  font-size: 100%;
-  font-family: var(--font-f-main);
-  color: var(--color-main-black);
-  /* opcional */
-  line-height: 1.4em;
+  color:inherit;
+  line-height: 1.5em;
   /* opcional */
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
