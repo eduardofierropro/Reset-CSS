@@ -141,6 +141,7 @@ button {
 table, tr, td , th, thead, tbody, tfoot{
   border-collapse: collapse;
   border-spacing: 0;
+  font:inherit;
 }
 
 /* Evitamos problemas con los SVG */
