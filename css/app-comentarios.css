@@ -60,6 +60,7 @@ img, picture, video, iframe, figure , canvas{
   max-width: 100%;
   width: 100%;
   display: block;
+  height: initial;
   /* (Opcional) */ -o-object-fit: cover;
   /* (Opcional) */ object-fit: cover;
   /* (Opcional) */ -o-object-position: center center;
