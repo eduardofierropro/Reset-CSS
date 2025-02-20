@@ -61,8 +61,7 @@ form, input, textarea, select, button, label {
 textarea {
   white-space: pre-wrap;
 }
-button {
-  all: unset;
+button , label{
   cursor: pointer;
 }
 ::placeholder {

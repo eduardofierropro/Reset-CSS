@@ -130,8 +130,7 @@ textarea {
   white-space: pre-wrap;
 }
 /* Añadimos el cursor y evitamos problemas con display:revert en algunos navegadores */
-button {
-  all: unset;
+button , label{
   cursor: pointer;
 }
 /* Elimina el color predeterminado de los placeholders */

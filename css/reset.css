@@ -76,8 +76,7 @@ textarea {
 ::placeholder {
   color: unset;
 }
-button {
-  all: unset;
+button , label{
   cursor: pointer;
 }
 table, tr, td , th, thead, tbody, tfoot{
