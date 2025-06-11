@@ -52,6 +52,7 @@ html {
 }
 h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em, mark, del, pre, code {
   font:inherit;
+  line-height: 1em;
   color: inherit;
   text-decoration: none;
   text-wrap: pretty;
@@ -86,6 +87,7 @@ table, tr, td , th, thead, tbody, tfoot{
 }
 svg {
   width: 100%;
+  height: initial;
   display: block;
   fill: currentColor;
 }

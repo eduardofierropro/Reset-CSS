@@ -115,6 +115,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 /* Nivelamos problemas de tipografías y colocación de formularios */
 form, input, textarea, select, button, label {
   font: inherit;
+  line-height: 1em;
   background-color: transparent;
   color: inherit;
   display: block;
@@ -147,6 +148,7 @@ table, tr, td , th, thead, tbody, tfoot{
 /* Evitamos problemas con los SVG */
 svg {
   width: 100%;
+  height: initial;
   display: block;
   fill: currentColor;
 }
